@@ -50,15 +50,15 @@ let arrayOne = [
 ]
 
 const onSelect = (e) => {
-  let employeeId = e.target.id
-  let valueId = e.target.value
-  let findEmployee = arrayOne.find(employee => employee.id == employeeId)
+  let employeeId = Number(e.target.id)
+  let valueId = Number(e.target.value)
+  let findEmployee = arrayOne.find(employee => employee.id === employeeId)
   findEmployee.selection && arrayTwo.push(findEmployee.selection)
   // here you can watch the array change depending on if the employee has a selection or not console.log('checking the array', arrayTwo)
-  let findInputValue = arrayTwo.find(value => value.id == valueId)
+  let findInputValue = arrayTwo.find(value => value.id === valueId)
   // Here we are updasting the selection of the employee object in the arrayOne and updating it to the inputValue
   findEmployee.selection = findInputValue
-  let findIndex = arrayTwo.findIndex(x => x.id == valueId)
+  let findIndex = arrayTwo.findIndex(x => x.id === valueId)
   // if you want to see the array before the removal console.log('before removal of selected item', arrayTwo)
   arrayTwo.splice(findIndex, 1)
   // if you want to see the array after the removal console.log('after removal of selected item', arrayTwo)
