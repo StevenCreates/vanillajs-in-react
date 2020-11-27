@@ -1,36 +1,6 @@
-
 import './App.css';
 
 function App() {
-
-
-
-// const onSelect = (e) => {
-
-//  let theIndex = e.target.value
-//  let foundItem = arrayTwo.findIndex(x => x.id == theIndex)
-//  let employee = e.target.id
-//  let objIndex = arrayOne.findIndex((obj => obj.id == employee));
-//  console.log("Employee Before Update: ", arrayOne[objIndex])
-//  console.log("Options Array Before Update:", arrayTwo)
-
-// //  {arrayOne[employee].selection && arrayTwo.push(arrayOne[employee].selection)}
-// //  {arrayOne[employee].selection && (
-// //   arrayOne[objIndex].selection = arrayTwo[foundItem]
-// //   )}
-// !arrayOne[employee].selection && (arrayOne[objIndex].selection = arrayTwo[foundItem])
-// !arrayOne[employee].selection && (arrayTwo.splice(foundItem, 1))
-// console.log("Employee After Update", arrayOne[objIndex])
-// console.log("Options Array After Update:", arrayTwo)
-
-
-// //  let updatedArr = arrayTwo
-// //  updatedArr.splice(foundItem, 1)
-// //  console.log(updatedArr)
-// //   setArrayTwo(updatedArr)
-// // setArrayTwo(arrayTwo.splice(foundItem, 1))
-
-// }
 
 let arrayTwo = [
   {id: 4564, option: "Value 1"},
@@ -38,9 +8,6 @@ let arrayTwo = [
   {id: 45, option: "Value 3"},
   {id: 34445, option: "Value 4"},
 ]
-
-
-
 
 let arrayOne = [
   {id: 1 ,firstName: "Steven", lastName: "Hofheins", selection: null},
@@ -65,13 +32,6 @@ const onSelect = (e) => {
 
 }
 
-const updateEmployee = (e) => {
-
-}
-
-const updateArray = (e) => {
-
-}
 
   return (
     <div className="App">
